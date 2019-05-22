@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MotionShuffleActivity"
+    app:layoutDescription="@xml/scene_motion_shuffle"
+    tools:showPaths="true">
+
+    <ImageView android:id="@+id/image_part_001"
+        android:layout_width="137dp"
+        android:layout_height="330dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/image_part_002"/>
+
+    <ImageView android:id="@+id/image_part_002"
+        android:layout_width="137dp"
+        android:layout_height="330dp"
+        app:layout_constraintLeft_toRightOf="@id/image_part_001"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/image_part_003"/>
+
+    <ImageView android:id="@+id/image_part_003"
+        android:layout_width="137dp"
+        android:layout_height="330dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/image_part_002"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/image_part_005"/>
+
+    <ImageView android:id="@+id/image_part_004"
+        android:layout_width="137dp"
+        android:layout_height="330dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_part_001"
+        android:src="@mipmap/image_part_006"/>
+
+    <ImageView android:id="@+id/image_part_005"
+        android:layout_width="137dp"
+        android:layout_height="330dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/image_part_004"
+        app:layout_constraintTop_toBottomOf="@id/image_part_002"
+        android:src="@mipmap/image_part_001"/>
+
+    <ImageView android:id="@+id/image_part_006"
+        android:layout_width="137dp"
+        android:layout_height="330dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@id/image_part_005"
+        app:layout_constraintTop_toBottomOf="@id/image_part_003"
+        android:src="@mipmap/image_part_004"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

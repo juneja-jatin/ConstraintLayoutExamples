@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@+id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="3000">
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <!-- this is 1 number -->
+        <Constraint
+            android:id="@id/image_part_005"
+            android:layout_width="137dp"
+            android:layout_height="330dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- this is 4 number -->
+        <Constraint
+            android:id="@id/image_part_006"
+            android:layout_width="137dp"
+            android:layout_height="330dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_part_005"/>
+
+        <!-- this is 2 number -->
+        <Constraint
+            android:id="@id/image_part_001"
+            android:layout_width="137dp"
+            android:layout_height="330dp"
+            app:layout_constraintLeft_toRightOf="@id/image_part_005"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- this is 5 number -->
+        <Constraint
+            android:id="@id/image_part_003"
+            android:layout_width="137dp"
+            android:layout_height="330dp"
+            app:layout_constraintTop_toBottomOf="@id/image_part_001"
+            app:layout_constraintLeft_toRightOf="@id/image_part_006"/>
+
+        <!-- this is 3 number -->
+        <Constraint
+            android:id="@id/image_part_002"
+            android:layout_width="137dp"
+            android:layout_height="330dp"
+            app:layout_constraintLeft_toRightOf="@id/image_part_001"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- this is 6 number -->
+        <Constraint
+            android:id="@id/image_part_004"
+            android:layout_width="137dp"
+            android:layout_height="330dp"
+            app:layout_constraintTop_toBottomOf="@id/image_part_002"
+            app:layout_constraintLeft_toRightOf="@id/image_part_003"/>
+
+    </ConstraintSet>
+</MotionScene>
